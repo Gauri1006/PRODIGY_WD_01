@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fffafc;
+  color: #5c4a4a;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  background-color: #ffe6f0;
+  padding: 40px 20px;
+  border-bottom: 6px dotted #f9b5d0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 0 0 2rem 2rem;
+}
+
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #f573b9;
+}
+
+header p {
+  font-size: 1.1rem;
+}
+
+.hero {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.cta {
+  background-color: #ffc2e0;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(255, 192, 203, 0.4);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.cta:hover {
+  transform: scale(1.05);
+}
+
+.cta::after {
+  content: "✨ Let's get crafting!";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffebf2;
+  color: #f573b9;
+  padding: 5px 10px;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cta:hover::after {
+  opacity: 1;
+}
+
+.about {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff0f6;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.3);
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about ul li {
+  margin-bottom: 10px;
+}
+
+.gallery {
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery h2 {
+  margin-bottom: 20px;
+  color: #f46bbd;
+  font-family: 'Pacifico', cursive;
+}
+
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery-images img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-images img:hover {
+  transform: scale(1.1);
+}
+
+.countdown-section {
+  text-align: center;
+  margin: 40px auto;
+  padding: 30px 20px;
+  max-width: 500px;
+  background: #fff5fc;
+  border-radius: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.countdown-heading {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #f46bbd;
+}
+
+.countdown-timer {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #ff3399;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.workshop-date {
+  font-size: 1rem;
+  color: #777;
+}
+
+.register {
+  text-align: center;
+  padding: 20px;
+}
+
+.register h2 {
+  font-family: 'Pacifico', cursive;
+  color: #f46bbd;
+  margin-bottom: 20px;
+}
+
+form input {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #f8b6d3;
+  border-radius: 10px;
+  width: 200px;
+  font-family: 'Poppins', sans-serif;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #ffc2e0;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.4);
+  transition: transform 0.3s ease;
+}
+
+form button:hover {
+  transform: scale(1.05);
+}
+
+.faq,
+.testimonials {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  background: #fff0f6;
+  padding: 10px 15px;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffe6f0;
+  border-top: 6px dotted #f9b5d0;
+}
+
+footer a {
+  color: #f573b9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer i {
+  color: #f573b9;
+}
+
+.confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.floating-particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.particle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  animation: float 10s linear infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) rotate(360deg);
+    opacity: 0;
+  }
+}

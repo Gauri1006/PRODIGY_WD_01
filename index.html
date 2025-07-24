@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tiny Tykes Clay Workshop</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    body {
+      background: #ffeef7;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #444;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    h1, h2 {
+      font-family: 'Pacifico', cursive;
+      color: #ff8cb9;
+      text-align: center;
+    }
+
+    .bg-decor {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background-color: #ffe0f0;
+      border-radius: 50%;
+      opacity: 0.3;
+      z-index: 0;
+      animation: floatDecor 12s ease-in-out infinite;
+    }
+    .bg1 { top: 10%; left: 5%; }
+    .bg2 { top: 40%; right: 10%; }
+    .bg3 { bottom: 15%; left: 30%; }
+
+    @keyframes floatDecor {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(20px); }
+      100% { transform: translateY(0); }
+    }
+
+    .cta, form button {
+      background-color: #ff9ecb;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      padding: 12px 24px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      box-shadow: 0 8px 20px rgba(255, 182, 193, 0.3);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .cta:hover, form button:hover {
+      transform: scale(1.05);
+      background-color: #ff78b2;
+    }
+
+    .cta {
+      animation: floatY 3s ease-in-out infinite;
+    }
+
+    @keyframes floatY {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
+    }
+
+    .popup-image {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(0,0,0,0.6);
+      display: none;
+      justify-content: center; align-items: center;
+      z-index: 9999;
+    }
+
+    .popup-image img {
+      max-width: 90%; max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    .countdown-section {
+      text-align: center;
+      margin: 40px auto;
+    }
+
+    .countdown-timer {
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: #d63384;
+      background: #fff0f5;
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: inline-block;
+    }
+
+    .confetti {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      background: rgba(255,255,255,0.9);
+      z-index: 9999;
+    }
+
+    .gallery-images img {
+      width: 180px;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .gallery-images img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background pastel shapes -->
+  <div class="bg-decor bg1"></div>
+  <div class="bg-decor bg2"></div>
+  <div class="bg-decor bg3"></div>
+
+  <header>
+    <h1 data-aos="fade-down">🌸 Welcome to Tiny Tykes Craft Workshops! 🌸</h1>
+    <p data-aos="fade-up" style="text-align:center;">Unleash Your Inner Artist with Clay Magic!</p>
+  </header>
+
+  <section class="hero" data-aos="zoom-in" style="padding: 2rem; text-align:center;">
+    <button class="cta">Explore Clay Cuties</button>
+  </section>
+
+  <section class="about" data-aos="fade-right" style="padding: 1rem 2rem;">
+    <p>Join our whimsical clay art workshops and discover the joy of sculpting adorable miniatures with your own hands! From cupcakes to cuddly animals, learn to craft cuteness from scratch — no experience needed, just your imagination.</p>
+    <ul>
+      <li>🎨 Perfect for all ages</li>
+      <li>🥝 Dessert-inspired themes</li>
+      <li>👩‍🎨 Hands‑on guidance</li>
+      <li>📸 Insta‑worthy creations to take home!</li>
+    </ul>
+  </section>
+
+  <section class="gallery" data-aos="fade-up">
+    <h2>Gallery</h2>
+    <div class="gallery-images">
+      <img src="images/Screenshot 2025-07-06 220022.png" alt="Clay Art 1">
+      <img src="images/Screenshot 2025-07-06 215712.png" alt="Clay Art 2">
+      <img src="images/Screenshot 2025-07-06 215602.png" alt="Clay Art 3">
+      <img src="images/Screenshot 2025-07-06 213140.png" alt="Clay Art 4">
+      <img src="images/Screenshot 2025-07-10 192716.png" alt="Clay Art 5">
+      <img src="images/Screenshot 2025-06-03 185404.png" alt="Clay Art 6">
+      <img src="images/Screenshot 2025-07-22 081317.png" alt="Clay Art 7">
+    </div>
+  </section>
+
+  <section class="countdown-section" data-aos="fade-up">
+    <h2>🎉 Workshop starts in:</h2>
+    <div class="countdown-timer">
+      <span id="dd">00</span>:<span id="hh">00</span>:<span id="mm">00</span>:<span id="ss">00</span>
+    </div>
+    <p>🗓️ Date: 24 July 2025 | ⏰ 4:30 PM IST</p>
+  </section>
+
+  <section class="register" data-aos="fade-up" style="text-align:center; padding-bottom:2rem;">
+    <h2>Register Now</h2>
+    <form id="workshopForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <button type="submit">Book Spot</button>
+    </form>
+  </section>
+
+  <section class="faq" data-aos="fade-up">
+    <h2>FAQs</h2>
+    <div class="faq-item">
+      <h3>What age group is this for?</h3>
+      <p>Anyone 5+ can join! We guide every participant step‑by‑step.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do I need to bring anything?</h3>
+      <p>Nope! We provide all clay and tools — just bring your creativity!</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I take my creations home?</h3>
+      <p>Absolutely! Your creations are all yours to keep!</p>
+    </div>
+  </section>
+
+  <section class="testimonials" data-aos="fade-left">
+    <h2>What People Say</h2>
+    <blockquote>“It was the cutest experience ever! My daughter loved every moment!” – Priya M.</blockquote>
+    <blockquote>“Loved the vibe, the colors, and the hands‑on fun!” – Anjali R.</blockquote>
+  </section>
+
+  <footer data-aos="fade-up" style="padding:2rem; background:#ffe6f0;">
+    <p>Follow us on 
+      <a href="https://www.instagram.com/tiny_tykes_craft/" target="_blank">
+        🌸 @tiny_tykes_craft
+      </a>
+    </p>
+  </footer>
+
+  <!-- Image Modal Popup -->
+  <div id="imageModal" class="popup-image">
+    <img id="modalImage" src="" alt="Large preview">
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 800 });
+
+    // Countdown Timer
+    const dd = document.getElementById("dd"),
+          hh = document.getElementById("hh"),
+          mm = document.getElementById("mm"),
+          ss = document.getElementById("ss");
+
+    function updateCountdown() {
+      const target = new Date("July 24, 2025 16:30:00").getTime();
+      const now = Date.now();
+      const diff = target - now;
+
+      if (diff <= 0) {
+        dd.textContent = hh.textContent = mm.textContent = ss.textContent = "00";
+        return;
+      }
+
+      const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const s = Math.floor((diff % (1000 * 60)) / 1000);
+
+      dd.textContent = String(d).padStart(2, '0');
+      hh.textContent = String(h).padStart(2, '0');
+      mm.textContent = String(m).padStart(2, '0');
+      ss.textContent = String(s).padStart(2, '0');
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Form submission confetti message
+    document.getElementById("workshopForm").addEventListener("submit", e => {
+      e.preventDefault();
+      const conf = document.createElement("div");
+      conf.className = "confetti";
+      conf.textContent = "🎉 Yay! You're registered!";
+      document.body.appendChild(conf);
+      setTimeout(() => conf.remove(), 4000);
+      e.target.reset();
+    });
+
+    // Gallery image popup
+    document.querySelectorAll(".gallery-images img").forEach(img => {
+      img.addEventListener("click", () => {
+        document.getElementById("modalImage").src = img.src;
+        document.getElementById("imageModal").style.display = "flex";
+      });
+    });
+
+    document.getElementById("imageModal").addEventListener("click", e => {
+      if (e.target === e.currentTarget) {
+        document.getElementById("imageModal").style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>
