@@ -3,11 +3,11 @@
 This repository contains my submission for *Task 1* of the *Web Development Internship* at *Prodigy InfoTech*.
 
 My task was to create a *Responsive Landing Page* — and I designed a cute, pastel-themed website for the *Tiny Tykes Clay Workshop*. It includes animated elements, a countdown timer, interactive gallery, registration form, and much more.
-<img width="2835" height="1563" alt="Screenshot 2025-07-22 203029" src="https://github.com/user-attachments/assets/80261317-7207-4f93-9cb7-c7947964040d" />
-<img width="2830" height="1557" alt="Screenshot 2025-07-22 203016" src="https://github.com/user-attachments/assets/1417c2aa-adda-46bf-a858-faca81e0808a" />
-<img width="2826" height="1548" alt="Screenshot 2025-07-22 203002" src="https://github.com/user-attachments/assets/e4ebf729-b14b-4d82-899f-8c558cc13d54" />
-<img width="2827" height="1550" alt="Screenshot 2025-07-22 202918" src="https://github.com/user-attachments/assets/d794753c-507c-4cf1-9552-4a61ce413f79" />
 <img width="2831" height="1562" alt="Screenshot 2025-07-22 202901" src="https://github.com/user-attachments/assets/6de3dba7-eb4c-4540-8f50-73165b288528" />
+<img width="2827" height="1550" alt="Screenshot 2025-07-22 202918" src="https://github.com/user-attachments/assets/d794753c-507c-4cf1-9552-4a61ce413f79" />
+<img width="2826" height="1548" alt="Screenshot 2025-07-22 203002" src="https://github.com/user-attachments/assets/e4ebf729-b14b-4d82-899f-8c558cc13d54" />
+<img width="2830" height="1557" alt="Screenshot 2025-07-22 203016" src="https://github.com/user-attachments/assets/1417c2aa-adda-46bf-a858-faca81e0808a" />
+<img width="2835" height="1563" alt="Screenshot 2025-07-22 203029" src="https://github.com/user-attachments/assets/80261317-7207-4f93-9cb7-c7947964040d" />
 
 ---
 
